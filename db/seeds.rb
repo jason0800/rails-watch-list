@@ -25,3 +25,26 @@ Movie.create(
   poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg",
   rating: 7.0
 )
+
+Movie.create(
+  title: "Bob Breaking Out Of Prison",
+  overview: "Bob breaking out of prison amazingly",
+  poster_url: "ww.bob.com",
+  rating: 9.9
+)
+
+List.create(
+  name: "Prison Break"
+)
+
+Bookmark.create(
+  comment: "Best movie ever! Bob is amazing!",
+  movie_id: 5,
+  list_id: 1
+)
+
+Bookmark.create(
+  comment: "Best movie ever! Shawshank is amazing!",
+  movie_id: 2,
+  list_id: 1
+)
