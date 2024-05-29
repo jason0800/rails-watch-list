@@ -29,7 +29,7 @@ Movie.create(
 Movie.create(
   title: "Bob Breaking Out Of Prison",
   overview: "Bob breaking out of prison amazingly",
-  poster_url: "ww.bob.com",
+  poster_url: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Bob_the_builder.jpg/220px-Bob_the_builder.jpg",
   rating: 9.9
 )
 
