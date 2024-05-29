@@ -1,6 +1,15 @@
 <h2>All Movie Lists</h2>
-<% @lists.each do |list| %>
-  <%= link_to list.name, list_path(list.id) %>
-<% end %>
+
+<div class="d-flex m-5">
+  <% @lists.each do |list| %>
+    <div class="card m-2" style="width: 18rem; height: 18rem;">
+      <%= link_to list.name, list_path(list.id) %>
+      <%= link_to "Delete List",
+          list_path(list.id),
+          data: { turbo_method: :delete, turbo_confirm: "You sure?" }
+      %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to "Create New List", new_list_path %>
